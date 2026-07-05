@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Karate Budokan Federation International</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <div id="preloader"><div class="loader-content"><img src="images/logo.png" alt="Logo" class="loader-logo"><div class="loader-bar"><span></span></div></div></div>
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+                <div class="brand-text"><span class="brand-name">BUDOKAN</span><span class="brand-sub">FEDERATION INTERNATIONAL</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><button id="themeToggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+                    <li class="nav-item ms-lg-3"><a href="membership.html" class="btn btn-primary-custom">Join Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Contact Us</h1>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Our Location</h4>
+                        <p>123 Martial Arts Avenue<br>Tokyo, Japan 100-0001</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Call Us</h4>
+                        <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email Us</h4>
+                        <p>info@budokan-intl.com<br>support@budokan-intl.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form + Map -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Send Us a <span class="text-primary-custom">Message</span></h2>
+                    <p class="lead-text">Have questions? Ready to start your journey? We'd love to hear from you.</p>
+
+                   <form id="contactForm" class="contact-form">
+    <div class="row g-3">
+
+        <div class="col-md-6">
+            <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="from_name"
+                placeholder="Your Name"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="from_email"
+                placeholder="Your Email"
+                required>
+        </div>
+
+        <div class="col-md-6">
+            <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number">
+        </div>
+
+        <div class="col-md-6">
+            <select
+                class="form-select"
+                id="interest"
+                name="interest"
+                required>
+
+                <option value="">Select Interest</option>
+                <option>Kids Karate</option>
+                <option>Women Self Defense</option>
+                <option>Adult Karate</option>
+                <option>Black Belt Training</option>
+                <option>Competition Karate</option>
+                <option>Other</option>
+
+            </select>
+        </div>
+
+        <div class="col-12">
+            <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                required></textarea>
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary-custom btn-lg">
+                <i class="fas fa-paper-plane me-2"></i>
+                Send Message
+            </button>
+        </div>
+
+    </div>
+</form>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207714.24593753498!2d139.57628379999998!3d35.68948749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd0b43a8b2c5b79!2sTokyo%2C%20Japan!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" height="500" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="office-hours mt-4">
+                        <h4><i class="far fa-clock text-primary-custom"></i> Office Hours</h4>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>6:00 AM - 9:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Logo" class="footer-logo">
+                        <h4>BUDOKAN FEDERATION</h4>
+                        <p>International Martial Arts Academy.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our Courses</h5>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">Kids Karate</a></li>
+                        <li><a href="courses.html">Adult Karate</a></li>
+                        <li><a href="courses.html">Black Belt Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Karate Budokan Federation International. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/15551234567" class="sticky-btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+15551234567" class="sticky-btn call-btn"><i class="fas fa-phone"></i></a>
+    <button id="backToTop" class="sticky-btn top-btn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("r50v-Hp8srylWeYUw");
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    const params = {
+        from_name: document.getElementById("name").value,
+        from_email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        interest: document.getElementById("interest").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send(
+        "service_o5wjllf",
+        "template_8t0a90n",
+        params
+    ).then(function() {
+
+        alert("✅ Message sent successfully!");
+
+        document.getElementById("contactForm").reset();
+
+    }).catch(function(error) {
+
+        alert("❌ Failed to send message");
+
+        console.log(error);
+
+    });
+
+});
+</script>
+</body>
+</html>
+
+<!--r50v-Hp8srylWeYUw
+ karate_gmail
+service_o5wjllf -->

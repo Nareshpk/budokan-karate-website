@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <!-- ============================================= -->
+    <!-- META & SEO -->
+    <!-- ============================================= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karate Budokan Federation International - Premium International Martial Arts Academy offering Traditional Karate, Self Defense, and Black Belt Training.">
+    <meta name="keywords" content="Karate, Budokan, Martial Arts, Self Defense, Black Belt, Karate Academy">
+    <meta name="author" content="Karate Budokan Federation International">
+    <meta name="theme-color" content="#C40000">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Karate Budokan Federation International">
+    <meta property="og:description" content="Discipline. Respect. Strength. Confidence.">
+    <meta property="og:type" content="website">
+
+    <title>Karate Budokan Federation International | Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- LOADING SCREEN -->
+    <!-- ============================================= -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="images/logo.png" alt="Logo" class="loader-logo">
+            <div class="loader-bar"><span></span></div>
+            <p class="loader-text">Loading the Way of the Empty Hand...</p>
+        </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SCROLL PROGRESS BAR -->
+    <!-- ============================================= -->
+    <div id="scroll-progress"></div>
+
+    <!-- ============================================= -->
+    <!-- STICKY NAVBAR -->
+    <!-- ============================================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Karate Budokan Logo" class="nav-logo">
+                <div class="brand-text">
+                    <span class="brand-name">BUDOKAN</span>
+                    <span class="brand-sub">FEDERATION INTERNATIONAL</span>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="membership.html" class="btn btn-primary-custom">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- HERO SECTION -->
+    <!-- ============================================= -->
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+
+        <div class="container hero-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <span class="hero-badge" data-aos="fade-down">
+                        <i class="fas fa-star me-2"></i>International Martial Arts Academy
+                    </span>
+
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        KARATE <span class="text-gold">BUDOKAN</span><br>
+                        FEDERATION <span class="text-gold">INTERNATIONAL</span>
+                    </h1>
+
+                    <div class="typing-wrapper" data-aos="fade-up" data-aos-delay="200">
+                        <span class="typing-label">The Way of</span>
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                        Forge your body, sharpen your mind, and master the ancient art of Karate
+                        under world-class instructors at the most prestigious Budokan academy.
+                    </p>
+
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="membership.html" class="btn btn-primary-custom btn-lg">
+                            <i class="fas fa-user-plus me-2"></i>Join Now
+                        </a>
+                        <a href="courses.html" class="btn btn-outline-custom btn-lg">
+                            <i class="fas fa-book-open me-2"></i>Explore Courses
+                        </a>
+                    </div>
+
+                    <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                        <div class="stat-item">
+                            <h3><span class="counter" data-target="3000">0</span>+</h3>
+                            <p>Students</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3><span class="counter" data-target="150">0</span>+</h3>
+                            <p>Black Belts</p>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <h3><span class="counter" data-target="50">0</span>+</h3>
+                            <p>Championships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- ============================================= -->
+    <!-- ABOUT SECTION -->
+    <!-- ============================================= -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrapper">
+                        <img src="images/about-main.jpg" alt="About Karate Budokan" class="about-main-img" loading="lazy">
+                        <div class="about-badge">
+                            <h3>30+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="section-subtitle">About Our Academy</span>
+                    <h2 class="section-title">The Legacy of <span class="text-primary-custom">Budokan</span></h2>
+                    <p class="lead-text">
+                        Founded in 1993, Karate Budokan Federation International has grown into one of the
+                        world's most respected martial arts institutions, preserving the ancient traditions
+                        of Okinawan Karate while embracing modern training methodologies.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                            <div>
+                                <h5>Our Mission</h5>
+                                <p>To cultivate discipline, respect, and physical excellence through authentic Karate training.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                            <div>
+                                <h5>Our Vision</h5>
+                                <p>To be the global leader in traditional martial arts education and championship development.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-yin-yang"></i></div>
+                            <div>
+                                <h5>Our Philosophy</h5>
+                                <p>Mind, Body, Spirit — unified through the disciplined practice of the Way of the Empty Hand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn-primary-custom mt-3">
+                        Learn More <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- COURSES SECTION -->
+    <!-- ============================================= -->
+    <section id="courses" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Our <span class="text-primary-custom">Courses</span></h2>
+                <p class="section-description">
+                    Tailored programs for every age and skill level, taught by certified international masters.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/kids-karate.jpg" alt="Kids Karate" loading="lazy">
+                            <span class="course-tag">Ages 5-12</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Kids Karate</h3>
+                            <p>Build confidence, discipline, and coordination through fun, structured training for young martial artists.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 6 Months</span>
+                                <span><i class="fas fa-users"></i> 12-15 Students</span>
+                            </div>
+                            <a href="courses.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/women-self-defense.jpg" alt="Women Self Defense" loading="lazy">
+                            <span class="course-tag">Women Only</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Women Self Defense</h3>
+                            <p>Empowering women with practical self-defense techniques, awareness, and unshakable confidence.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 3 Months</span>
+                                <span><i class="fas fa-users"></i> 10-12 Students</span>
+                            </div>
+                            <a href="courses.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/adult-karate.jpg" alt="Adult Karate" loading="lazy">
+                            <span class="course-tag">18+ Years</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Adult Karate</h3>
+                            <p>Comprehensive training in traditional Karate for adults — from white belt to black belt mastery.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 12 Months</span>
+                                <span><i class="fas fa-users"></i> 15-20 Students</span>
+                            </div>
+                            <a href="courses.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/black-belt.jpg" alt="Black Belt Training" loading="lazy">
+                            <span class="course-tag">Elite</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Black Belt Training</h3>
+                            <p>Advanced curriculum for dedicated students pursuing the coveted black belt and beyond.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 24 Months</span>
+                                <span><i class="fas fa-users"></i> 8-10 Students</span>
+                            </div>
+                            <a href="courses.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/competition.jpg" alt="Competition Karate" loading="lazy">
+                            <span class="course-tag">Pro</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Competition Karate</h3>
+                            <p>Prepare for national and international tournaments with elite coaching and strategic sparring.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 12 Months</span>
+                                <span><i class="fas fa-users"></i> 10-12 Students</span>
+                            </div>
+                            <a href="courses.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="images/fitness.jpg" alt="Fitness Karate" loading="lazy">
+                            <span class="course-tag">All Levels</span>
+                        </div>
+                        <div class="course-body">
+                            <h3>Fitness Karate</h3>
+                            <p>High-energy cardio-karate workouts that build strength, flexibility, and endurance.</p>
+                            <div class="course-meta">
+                                <span><i class="far fa-clock"></i> 3 Months</span>
+                                <span><i class="fas fa-users"></i> 20-25 Students</span>
+                            </div>
+                            <a href="courses.html" class="course-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- TRAINING PROGRAMS SECTION -->
+    <!-- ============================================= -->
+    <section id="training" class="section-padding bg-dark-custom text-white">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle text-gold">Training Programs</span>
+                <h2 class="section-title text-white">Master Every <span class="text-gold">Discipline</span></h2>
+                <p class="section-description">
+                    Our specialized programs cover every aspect of traditional and modern Karate.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="training-card">
+                        <div class="training-icon"><i class="fas fa-torii-gate"></i></div>
+                        <h4>Traditional Karate</h4>
+                        <p>Rooted in Okinawan heritage, preserving centuries-old techniques and philosophy.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="training-card">
+                        <div class="training-icon"><i class="fas fa-hand-fist"></i></div>
+                        <h4>Kata</h4>
+                        <p>Master the choreographed forms that encode the essence of Karate combat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="training-card">
+                        <div class="training-icon"><i class="fas fa-person-fighting"></i></div>
+                        <h4>Kumite</h4>
+                        <p>Sparring discipline — speed, strategy, and controlled power against opponents.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="training-card">
+                        <div class="training-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h4>Self Defense</h4>
+                        <p>Real-world techniques to protect yourself and loved ones in any situation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="training-card">
+                        <div class="training-icon"><i class="fas fa-dumbbell"></i></div>
+                        <h4>Fitness</h4>
+                        <p>Peak physical conditioning through martial arts-inspired workouts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="training-card">
+                        <div class="training-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Discipline Training</h4>
+                        <p>Mental fortitude, focus, and the warrior mindset for life beyond the dojo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- INSTRUCTORS SECTION -->
+    <!-- ============================================= -->
+    <section id="instructors" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Meet The Masters</span>
+                <h2 class="section-title">Our <span class="text-primary-custom">Instructors</span></h2>
+                <p class="section-description">
+                    Learn from internationally certified Sensei with decades of championship experience.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="images/instructor-1.jpg" alt="Sensei Paramesh" loading="lazy">
+                            <div class="instructor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="instructor-info">
+                            <h4>Sensei Paramesh</h4>
+                            <span class="instructor-rank">8th Dan Black Belt</span>
+                            <p>25+ Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="images/instructor-2.jpg" alt="Sensei Saravanan" loading="lazy">
+                            <div class="instructor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="instructor-info">
+                            <h4>Sensei Saravanan</h4>
+                            <span class="instructor-rank">7th Dan Black Belt</span>
+                            <p>20+ Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="images/instructor-3.jpg" alt="Sensei Senthamil Sakthi" loading="lazy">
+                            <div class="instructor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="instructor-info">
+                            <h4>Sensei Senthamil Sakthi</h4>
+                            <span class="instructor-rank">6th Dan Black Belt</span>
+                            <p>18+ Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="instructor-card">
+                        <div class="instructor-image">
+                            <img src="images/instructor-4.jpg" alt="Sensei Sundharam" loading="lazy">
+                            <div class="instructor-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="instructor-info">
+                            <h4>Sensei Sundharam</h4>
+                            <span class="instructor-rank">5th Dan Black Belt</span>
+                            <p>15+ Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- ACHIEVEMENTS / COUNTERS -->
+    <!-- ============================================= -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="counter-box">
+                        <i class="fas fa-user-graduate"></i>
+                        <h2><span class="counter" data-target="3000">0</span>+</h2>
+                        <p>Students Trained</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="counter-box">
+                        <i class="fas fa-medal"></i>
+                        <h2><span class="counter" data-target="150">0</span>+</h2>
+                        <p>Black Belts Awarded</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="counter-box">
+                        <i class="fas fa-trophy"></i>
+                        <h2><span class="counter" data-target="50">0</span>+</h2>
+                        <p>Championships Won</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="counter-box">
+                        <i class="fas fa-calendar-check"></i>
+                        <h2><span class="counter" data-target="30">0</span>+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- EVENTS SECTION -->
+    <!-- ============================================= -->
+    <section id="events" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Upcoming Events</span>
+                <h2 class="section-title">Tournaments & <span class="text-primary-custom">Workshops</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">AUG</span>
+                        </div>
+                        <div class="event-body">
+                            <span class="event-tag">Tournament</span>
+                            <h4>International Open Championship</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</p>
+                            <a href="events.html" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">SEP</span>
+                        </div>
+                        <div class="event-body">
+                            <span class="event-tag">Workshop</span>
+                            <h4>Advanced Kata Masterclass</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Okinawa, Japan</p>
+                            <a href="events.html" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">10</span>
+                            <span class="month">OCT</span>
+                        </div>
+                        <div class="event-body">
+                            <span class="event-tag">Belt Exam</span>
+                            <h4>Annual Black Belt Grading</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> Madrid, Spain</p>
+                            <a href="events.html" class="event-link">Register Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- TESTIMONIALS SECTION -->
+    <!-- ============================================= -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">What They Say</span>
+                <h2 class="section-title">Student <span class="text-primary-custom">Testimonials</span></h2>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Training at Budokan transformed my son's life. The discipline, confidence, and respect
+                                he has gained are invaluable. The Sensei are truly world-class."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="images/instructor-1.jpg" alt="Parent">
+                                <div>
+                                    <h5>Maria Rodriguez</h5>
+                                    <span>Parent of Student</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "I earned my black belt here after 3 years of dedicated training. The journey was
+                                challenging but the instructors pushed me beyond my limits. Oss!"
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="images/instructor-2.jpg" alt="Student">
+                                <div>
+                                    <h5>James Chen</h5>
+                                    <span>1st Dan Black Belt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "As a national champion, I can say Budokan's training methodology is unmatched.
+                                Their focus on fundamentals produces champions year after year."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="images/instructor-3.jpg" alt="Champion">
+                                <div>
+                                    <h5>Kenji Yamamoto</h5>
+                                    <span>National Champion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-control-prev-custom" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-control-next-custom" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- FAQ SECTION -->
+    <!-- ============================================= -->
+    <section id="faq" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-subtitle">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked <span class="text-primary-custom">Questions</span></h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What age can my child start Karate?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Children can begin our Kids Karate program from age 5. Our curriculum is age-appropriate
+                                    and focuses on fun, discipline, and foundational skills.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How long does it take to earn a black belt?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Typically 3-5 years of consistent training, depending on dedication, attendance,
+                                    and skill progression. We never rush the journey — mastery takes time.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Do I need prior experience to join?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely not! Our beginner programs are designed for complete novices.
+                                    Every black belt started as a white belt — your journey begins here.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What should I wear to my first class?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Comfortable athletic wear is perfect for your first class. Once enrolled,
+                                    you'll receive an official Budokan Gi (uniform).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Are the instructors certified?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. All our Sensei hold internationally recognized Dan rankings and certifications
+                                    from the World Karate Federation (WKF) and traditional Okinawan organizations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- CTA SECTION -->
+    <!-- ============================================= -->
+    <section class="cta-section">
+        <div class="container text-center" data-aos="zoom-in">
+            <h2>Begin Your Journey Today</h2>
+            <p>Join thousands of students who have transformed their lives through the Way of Karate.</p>
+            <div class="cta-buttons">
+                <a href="membership.html" class="btn btn-primary-custom btn-lg">Start Training</a>
+                <a href="contact.html" class="btn btn-outline-custom btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- FOOTER -->
+    <!-- ============================================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="images/logo.png" alt="Logo" class="footer-logo">
+                        <h4>BUDOKAN FEDERATION</h4>
+                        <p>International Martial Arts Academy preserving the traditions of Karate while building champions of tomorrow.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our Courses</h5>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">Kids Karate</a></li>
+                        <li><a href="courses.html">Women Self Defense</a></li>
+                        <li><a href="courses.html">Adult Karate</a></li>
+                        <li><a href="courses.html">Black Belt Training</a></li>
+                        <li><a href="courses.html">Competition Karate</a></li>
+                        <li><a href="courses.html">Fitness Karate</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates, events, and exclusive training tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@budokan-intl.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Karate Budokan Federation International. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-primary-custom"></i> for Martial Arts Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================= -->
+    <!-- STICKY BUTTONS -->
+    <!-- ============================================= -->
+    <a href="https://wa.me/15551234567" class="sticky-btn whatsapp-btn" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+15551234567" class="sticky-btn call-btn" aria-label="Call">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <button id="backToTop" class="sticky-btn top-btn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================= -->
+    <!-- SCRIPTS -->
+    <!-- ============================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
