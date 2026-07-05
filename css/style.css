@@ -2149,3 +2149,224 @@ img {
 .hours-item:last-child {
     border-bottom: none;
 }
+
+/* Custom Premium Hamburger Icon */
+.navbar-toggler {
+    border: none !important;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+[data-theme="dark"] .navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+[data-theme="light"] .navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+#mainNav.scrolled .navbar-toggler span {
+    background: var(--dark);
+}
+
+/* Animated X when open */
+.navbar-toggler[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* ============================================= */
+/* DARK MODE NAVBAR STYLES */
+/* ============================================= */
+
+/* Dark mode - scrolled navbar background */
+[data-theme="dark"] #mainNav.scrolled {
+    background: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode - navbar toggler icon (white on dark background) */
+[data-theme="dark"] #mainNav.scrolled .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dark mode - navbar toggler border */
+[data-theme="dark"] #mainNav.scrolled .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode - navbar toggler hover */
+[data-theme="dark"] #mainNav.scrolled .navbar-toggler:hover {
+    background-color: rgba(196, 0, 0, 0.3);
+    border-color: var(--primary);
+}
+
+/* Dark mode - brand text */
+[data-theme="dark"] #mainNav.scrolled .brand-name {
+    color: var(--white) !important;
+}
+
+[data-theme="dark"] #mainNav.scrolled .brand-sub {
+    color: var(--secondary);
+}
+
+/* Dark mode - nav links */
+[data-theme="dark"] #mainNav.scrolled .navbar-nav .nav-link {
+    color: var(--white) !important;
+}
+
+[data-theme="dark"] #mainNav.scrolled .navbar-nav .nav-link:hover,
+[data-theme="dark"] #mainNav.scrolled .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+/* Dark mode - theme toggle button */
+[data-theme="dark"] #mainNav.scrolled .theme-btn {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+[data-theme="dark"] #mainNav.scrolled .theme-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Dark mode - mobile menu background */
+[data-theme="dark"] .navbar-collapse {
+    background: rgba(10, 10, 10, 0.98) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode - mobile menu links */
+[data-theme="dark"] .navbar-collapse .nav-link {
+    color: var(--white) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .navbar-collapse .nav-link:hover {
+    color: var(--primary) !important;
+    background: rgba(196, 0, 0, 0.1);
+}
+
+/* ============================================= */
+/* COMPLETE DARK MODE STYLES */
+/* ============================================= */
+
+/* Dark mode - body and sections */
+[data-theme="dark"] body {
+    background: var(--bg-body);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .bg-light {
+    background: var(--bg-section) !important;
+}
+
+/* Dark mode - cards */
+[data-theme="dark"] .course-card,
+[data-theme="dark"] .instructor-card,
+[data-theme="dark"] .event-card,
+[data-theme="dark"] .pricing-card,
+[data-theme="dark"] .testimonial-card {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+/* Dark mode - feature items */
+[data-theme="dark"] .feature-item {
+    background: var(--bg-card);
+    border-left-color: var(--primary);
+}
+
+/* Dark mode - accordion */
+[data-theme="dark"] .accordion-item {
+    background: var(--bg-card);
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .accordion-button {
+    background: var(--bg-card);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* Dark mode - footer */
+[data-theme="dark"] .site-footer {
+    background: #000000;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Dark mode - form inputs */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border-color: var(--primary);
+}
+
+/* Dark mode - tables */
+[data-theme="dark"] .schedule-table {
+    background: var(--bg-card);
+}
+
+[data-theme="dark"] .schedule-table td {
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+/* Dark mode - buttons */
+[data-theme="dark"] .btn-outline-custom {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+[data-theme="dark"] .btn-outline-custom:hover {
+    background: var(--white);
+    color: var(--dark);
+}
+
+/* Dark mode - scroll indicator */
+[data-theme="dark"] .scroll-indicator {
+    color: var(--white);
+}
